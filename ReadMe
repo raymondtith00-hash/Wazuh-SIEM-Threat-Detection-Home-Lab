@@ -45,19 +45,20 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 
 ## Lab Demonstrations
 
-### SSH Authentication Failure
+### SSH Authentication Failure and Success
 
 I used Hydra from my Kali Linux VM to target my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts, allowing me to 
 investigate the activity through the dashboard.
 
-[Hydra SSH](Screenshots/Hydra.ssh.png)
+![Hydra Result](Screenshots/Hydra%20result.png) 
+![Authentication Failure](Screenshots/Authenticatioin%20failure.png)
 
 ### File Integrity Monitoring
 
 To test File Integrity Monitoring, I created, modified, and deleted files on the Ubuntu agent. Wazuh detected each change and generated alerts showing the file activity, 
 demonstrating how it can identify unauthorized modifications to monitored files and directories.
 
-[FIM](Screenshots/FIM.png)
+![FIM](Screenshots/FIM.png)
 
 ---
 
@@ -66,7 +67,7 @@ demonstrating how it can identify unauthorized modifications to monitored files 
 I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, 
 where I was able to review the event.
 
-[Suricata](Screenshots/Suricata-NMAP.png)
+![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
 ---
 
@@ -74,7 +75,7 @@ where I was able to review the event.
 
 I simulated privilege escalation by using `sudo` to elevate my privileges on the Ubuntu agent. Wazuh detected the successful elevation to the root account and generated a security event 
 
-[Privilege Escalation](Screenshots/Privilege-Escalataion-Root.png)
+![Privilege Escalation](Screenshots/Privelge%20Escalation%20to%20Root.png)
 
 ---
 
@@ -82,4 +83,5 @@ I simulated privilege escalation by using `sudo` to elevate my privileges on the
 
 To alert account management activity, I created and removed a local Linux user on the Ubuntu agent. Wazuh detected both actions and logged the events, demonstrating its ability to monitor changes to user accounts.
 
-[Users](Screenshots/User-creation-and-removal.png)
+![User Creation and Removal](Screenshots/User%20creation%20and%20removal.png)
+
