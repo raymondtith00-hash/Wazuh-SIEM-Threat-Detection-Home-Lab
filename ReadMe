@@ -42,15 +42,17 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 
 ### SSH Authentication Failure and Success
 
-I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts that I investigated through the Wazuh Dashboard.
-In a seperate scenario the attacker manages to ssh, what's important for me when viewing the alert you can see their ip they are entering from giving us more information on the attacker.
+I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against my Ubuntu endpoint. Wazuh detected the repeated failed login attempts and generated authentication alerts, which I investigated through the Wazuh Dashboard to analyze the attack activity.
+
+In a separate scenario, I successfully authenticated to the Ubuntu endpoint over SSH to simulate an attacker obtaining valid credentials. Wazuh generated a successful authentication event that included the source IP address, username, and login details. This information is valuable during a security event investigation because it allows analysts to identify where the connection originated, determine whether the login is expected or suspicious, and establish a timeline of attacker activity.
 
 ![Hydra Result](Screenshots/Hydra%20result.png) 
 ![Authentication Failure](Screenshots/Authenticatioin%20failure.png)
 
 ### File Integrity Monitoring
 
-To test File Integrity Monitoring, I created, modified, and deleted files on the Ubuntu agent. Wazuh detected each change and generated alerts showing the file activity, demonstrating how it can identify unauthorized modifications to monitored files and directories.
+To test File Integrity Monitoring (FIM), I created, modified, and deleted files on the Ubuntu endpoint. Wazuh detected each file system change and generated alerts detailing the affected files and directories, demonstrating its ability to identify unauthorized modifications to monitored resources.
+This capability is critical because attackers who gain access to a system often attempt to modify, delete, or introduce malicious files to establish persistence, execute malware, tamper with logs, or compromise sensitive data. File Integrity Monitoring helps security analysts quickly detect these unauthorized changes and investigate potential security incidents.
 
 ![FIM](Screenshots/FIM.png)
 
