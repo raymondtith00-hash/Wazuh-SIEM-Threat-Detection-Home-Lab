@@ -41,7 +41,7 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - Log Analysis
 
 
-## Skills Demonstrated
+## Skills Used 
 
 -Built and configured a multi-VM Security Operations Center (SOC) lab consisting of a Wazuh Manager, Ubuntu endpoint, and Kali Linux attacker to simulate enterprise security monitoring.
 
