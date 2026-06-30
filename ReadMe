@@ -23,10 +23,10 @@ The objective is to simulate common attacker techniques, generate security event
 
 ## Current Scenarios
 
-- [ ] SSH Authentication
-- [ ] Privilege Escalation
-- [ ] File Integrity Monitoring
-- [ ] User Account Creation
-- [ ] Service Management
-- [ ] Package Installation
-- [ ] Threat Hunting
+- [x] SSH Authentication
+- [x] Privilege Escalation
+- [x] File Integrity Monitoring
+- [x] User Account Creation
+- [x] Package Installation
+- [x] Threat Hunting
+- [x] Vulnerability Management (Nessus Essentials)
