@@ -40,13 +40,6 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - Threat Detection
 - Log Analysis
 
-## Current Scenarios
-
-- SSH Authentication
-- Privilege Escalation
-- File Integrity Monitoring
-- User Account Creation
-- Threat Hunting
 
 ## Skills Demonstrated
 
