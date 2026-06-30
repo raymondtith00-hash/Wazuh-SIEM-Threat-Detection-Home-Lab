@@ -61,14 +61,19 @@ This capability is critical because attackers who gain access to a system often 
 
 ### Network Reconnaissance
 
-I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to simulate network reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the event through the Wazuh Dashboard. The alert provided details such as the source IP address, destination host, and signature identifying the reconnaissance activity, allowing me to validate the detection and assess potential pre-attack behavior. Detecting reconnaissance is critical because attackers often use port scanning to identify open services and potential attack vectors before attempting to exploit a target.
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to simulate network reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the event through the Wazuh Dashboard. The alert provided details such as the source IP address, destination host, and signature identifying the reconnaissance activity, allowing me to validate the detection and assess potential pre-attack behavior. 
+
+Detecting reconnaissance is important because attackers often use port scanning as a first step to identify open services and potential attack vectors before attempting to exploit a target.
+
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
 ---
 
 ### Privilege Escalation
 
-I simulated privilege escalation by using `sudo` to elevate my privileges on the Ubuntu agent. Wazuh detected the successful elevation to the root account and generated a security event that was analyzed through the dashboard. 
+I simulated privilege escalation by using sudo to elevate my privileges on the Ubuntu endpoint. Wazuh detected the successful elevation to the root account and generated a security event, which I investigated through the Wazuh Dashboard. The alert captured details about the privileged command execution and user account involved, allowing me to verify the activity and understand how elevated privileges are monitored. 
+
+Detecting privilege escalation is critical because attackers often attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
 
 ![Privilege Escalation](Screenshots/Privelge%20Escalation%20to%20Root.png)
 
@@ -76,7 +81,9 @@ I simulated privilege escalation by using `sudo` to elevate my privileges on the
 
 ### User Account Creation
 
-To create account management activity, I created and removed a local Linux user on the Ubuntu agent. Wazuh detected both actions and logged the events, demonstrating its ability to monitor changes to user accounts.
+To simulate account management activity, I created and removed a local Linux user from the Kali Linux attacker VM after establishing access to the Ubuntu endpoint. Wazuh detected both actions and generated security events, which I investigated through the Wazuh Dashboard to verify the account changes and associated system activity. 
+
+Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
 ![User Creation and Removal](Screenshots/User%20creation%20and%20removal.png)
 
