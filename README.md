@@ -87,7 +87,7 @@ I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to si
 
 Detecting reconnaissance is important because attackers often use port scanning as a first step to identify open services and potential attack vectors before attempting to exploit a target.
 
-Suricata Nmap Alert
+**Suricata Nmap Alert**
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
