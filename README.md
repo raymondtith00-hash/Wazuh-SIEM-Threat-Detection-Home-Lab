@@ -84,7 +84,7 @@ I simulated privilege escalation by using sudo to elevate my privileges on the U
 
 Finding privilege escalation is essential because attackers attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
 
-![Privilege Escalation](Screenshots/Privelge%20Escalation%20to%20Root.png)
+![Privilege Escalation](Screenshots/Privlege-Escalation-to-Root.png)
 
 ---
 
