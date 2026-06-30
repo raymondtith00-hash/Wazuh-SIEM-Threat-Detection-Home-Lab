@@ -94,7 +94,7 @@ To simulate account management activity, I created and removed a local Linux use
 
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
-![User Creation and Removal](Screenshots/User%20creation%20and%20removal.png)
+![User Creation](Screenshots/User%20and%20group%20creation.png)
 
 ---
 
