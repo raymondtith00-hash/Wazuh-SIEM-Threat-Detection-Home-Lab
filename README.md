@@ -176,7 +176,7 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 
 ### User Account Creation
 
-To simulate account management activity, I created and removed a local Linux user from the Kali Linux attacker VM after establishing access to the Ubuntu endpoint. Wazuh detected both actions and generated security events, which I investigated through the Wazuh Dashboard to verify the account changes and associated system activity. 
+To simulate account management activity, I created a local Linux user from the Kali Linux attacker VM after establishing access to the Ubuntu endpoint. Wazuh detected both actions and generated security events, which I investigated through the Wazuh Dashboard to verify the account changes and associated system activity. 
 
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
