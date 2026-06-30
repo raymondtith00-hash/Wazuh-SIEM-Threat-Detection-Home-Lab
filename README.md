@@ -27,6 +27,17 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - SSH
 - Sudo
 
+**Security Concepts Demonstrated**
+- SSH Brute Force Detection
+- Authentication Monitoring
+- File Integrity Monitoring (FIM)
+- Network Reconnaissance Detection
+- Privilege Escalation Detection
+- User Account Monitoring
+- Security Event Investigation
+- Threat Detection
+- Log Analysis
+
 ## Current Scenarios
 
 - SSH Authentication
