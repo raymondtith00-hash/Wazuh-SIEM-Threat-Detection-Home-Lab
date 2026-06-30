@@ -97,6 +97,8 @@ I simulated privilege escalation by using sudo to elevate my privileges on the U
 
 Finding privilege escalation is essential because attackers attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
 
+**Privilege Escalation Alert
+
 ![Privilege-Escalation](Screenshots/Privlege-Escalation-to-Root.png)
 
 ---
@@ -107,11 +109,12 @@ To simulate account management activity, I created and removed a local Linux use
 
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
+**User Creation Alert
 ![User Creation](Screenshots/User%20and%20group%20creation.png)
 
 **FIM Kali Perspective** 
 
-![User creation](Screenshots/User creation Kali Perspective.png) 
+![User perspective](Screenshots/User creation Kali Perspective.png) 
 ---
 
 # What I Learned
