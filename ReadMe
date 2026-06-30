@@ -47,16 +47,14 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 
 ### SSH Authentication Failure and Success
 
-I used Hydra from my Kali Linux VM to target my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts, allowing me to 
-investigate the activity through the dashboard.
+I used Hydra from my Kali Linux VM to target my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts, allowing me to investigate the activity through the dashboard.
 
 ![Hydra Result](Screenshots/Hydra%20result.png) 
 ![Authentication Failure](Screenshots/Authenticatioin%20failure.png)
 
 ### File Integrity Monitoring
 
-To test File Integrity Monitoring, I created, modified, and deleted files on the Ubuntu agent. Wazuh detected each change and generated alerts showing the file activity, 
-demonstrating how it can identify unauthorized modifications to monitored files and directories.
+To test File Integrity Monitoring, I created, modified, and deleted files on the Ubuntu agent. Wazuh detected each change and generated alerts showing the file activity, demonstrating how it can identify unauthorized modifications to monitored files and directories.
 
 ![FIM](Screenshots/FIM.png)
 
@@ -64,8 +62,7 @@ demonstrating how it can identify unauthorized modifications to monitored files 
 
 ### Network Reconnaissance
 
-I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, 
-where I was able to review the event.
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I was able to review the event.
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
