@@ -1,4 +1,4 @@
-# Wazuh SIEM Threat Detection Lab
+# Wazuh SIEM Threat Detection and Triage Lab
 
 ## Overview
 
