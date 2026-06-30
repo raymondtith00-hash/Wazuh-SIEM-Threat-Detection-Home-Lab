@@ -83,7 +83,6 @@ To create account management activity, I created and removed a local Linux user 
 
 # What I Learned
 
-
 Building this lab gave me a much better understanding of how a Security Operations Center (SOC) operates and how security analysts investigate alerts. Before building it, I had learned about SIEMs and threat detection through coursework and labs, but this project gave me the opportunity to put those concepts into practice.
 
 Throughout the lab, I configured Wazuh, integrated Suricata, simulated attacks from my Kali Linux VM, and investigated the resulting alerts through the Wazuh Dashboard.
