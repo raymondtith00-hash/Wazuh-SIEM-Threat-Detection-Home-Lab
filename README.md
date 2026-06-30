@@ -204,12 +204,10 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 # What I Learned
 
-Building this lab gave me a much better understanding of how a Security Operations Center (SOC) operates and how security analysts investigate alerts. Before building it, I had learned about SIEMs and threat detection through coursework and labs, but this project gave me the opportunity to put those concepts into practice.
+Building this lab allowed me to apply concepts I had previously learned through coursework in a realistic environment. Configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
 
-Throughout the lab, I configured Wazuh, integrated Suricata, simulated attacks from my Kali Linux VM, and investigated the resulting alerts through the Wazuh Dashboard.
+Working through each scenario helped me understand how attacker activity is detected across endpoint and network telemetry, how to investigate alerts using log data, and how to triage security events by validating suspicious activity and correlating related evidence.
 
-Working through each scenario helped me better understand how different types of attacker activity appear from a defender's perspective and how a SIEM can be used to investigate suspicious behavior instead of simply generating alerts.
+This project also strengthened my Linux administration skills through user management, file system monitoring, service configuration, and troubleshooting.
 
-This project also strengthened my Linux skills by managing users, monitoring file changes, working with system services, and troubleshooting security tools.
-
-Overall, this lab made me more confident using Linux, investigating security alerts, and understanding how a Security Operations Center monitors and responds to security events. It also reinforced the importance of approaching cybersecurity from both the attacker and defender perspectives.
+Overall, the lab gave me practical experience with SIEM technologies, threat detection, security event investigation, and reinforced the importance of understanding cybersecurity from both the attacker and defender perspectives.
