@@ -1,7 +1,7 @@
 # Wazuh Home SOC Lab
 
 ## Overview
-This project documents the development of a home Security Operations Center (SOC) using Wazuh, Suricata, Kali Linux, Ubuntu Server, and Nessus Essentials.
+This project documents the development of a home Security Operations Center (SOC) using Wazuh, Suricata, Kali Linux, and Ubuntu Servers.
 The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments 
 
 ## Lab Architecture
@@ -12,10 +12,8 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 
 ## Technologies
 
-- Technologies
 - Wazuh SIEM
 - Suricata IDS
-- Nessus Essentials
 - Ubuntu Server
 - Kali Linux
 - Linux
@@ -30,4 +28,58 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - File Integrity Monitoring
 - User Account Creation
 - Threat Hunting
-- Vulnerability Management (Nessus Essentials)
+
+## Skills Demonstrated
+
+- SIEM Monitoring
+- Threat Hunting
+- Endpoint Monitoring
+- Network Intrusion Detection
+- Linux Administration
+- SSH Authentication
+- Privilege Escalation Detection
+- File Integrity Monitoring (FIM)
+- User Account Auditing
+- Vulnerability Assessment
+- Security Event Investigation 
+
+## Lab Demonstrations
+
+### SSH Authentication Failure
+
+I used Hydra from my Kali Linux VM to target my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts, allowing me to 
+investigate the activity through the dashboard.
+
+[Hydra SSH](Screenshots/Hydra.ssh.png)
+
+### File Integrity Monitoring
+
+To test File Integrity Monitoring, I created, modified, and deleted files on the Ubuntu agent. Wazuh detected each change and generated alerts showing the file activity, 
+demonstrating how it can identify unauthorized modifications to monitored files and directories.
+
+[FIM](Screenshots/FIM.png)
+
+---
+
+### Network Reconnaissance
+
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, 
+where I was able to review the event.
+
+[Suricata](Screenshots/Suricata-NMAP.png)
+
+---
+
+### Privilege Escalation
+
+I simulated privilege escalation by using `sudo` to elevate my privileges on the Ubuntu agent. Wazuh detected the successful elevation to the root account and generated a security event 
+
+[Privilege Escalation](Screenshots/Privilege-Escalataion-Root.png)
+
+---
+
+### User Account Creation
+
+To simulate account management activity, I created and removed a local Linux user on the Ubuntu agent. Wazuh detected both actions and logged the events, demonstrating its ability to monitor changes to user accounts.
+
+[Users](Screenshots/User-creation-and-removal.png)
