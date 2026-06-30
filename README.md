@@ -27,6 +27,8 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - SSH
 - Sudo
 
+--- 
+
 **Security Concepts Demonstrated**
 - SSH Brute Force Detection
 - Authentication Monitoring
