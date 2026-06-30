@@ -9,16 +9,23 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 - Kali Linux (Attacker)
 - Ubuntu Server (Monitored Endpoint with Wazuh Agent)
 
-## Technologies
+## Technologies Used
 
+**SIEM & Security Monitoring**
 - Wazuh SIEM
 - Suricata IDS
+- Operating Systems
 - Ubuntu Server
 - Kali Linux
 - Linux
+
+**Offensive Security & Attack Simulation**
+- Hydra (SSH Brute Force)
+- Nmap (Network Reconnaissance)
+
+**Protocols & Services**
 - SSH
-- Hydra
-- Nmap
+- Sudo
 
 ## Current Scenarios
 
