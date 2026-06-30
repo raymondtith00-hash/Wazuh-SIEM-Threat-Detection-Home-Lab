@@ -73,7 +73,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 I simulated privilege escalation by using sudo to elevate my privileges on the Ubuntu endpoint. Wazuh detected the successful elevation to the root account and generated a security event, which I investigated through the Wazuh Dashboard. The alert captured details about the privileged command execution and user account involved, allowing me to verify the activity and understand how elevated privileges are monitored. 
 
-Detecting privilege escalation is critical because attackers often attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
+Finding privilege escalation is essential because attackers attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
 
 ![Privilege Escalation](Screenshots/Privelge%20Escalation%20to%20Root.png)
 
