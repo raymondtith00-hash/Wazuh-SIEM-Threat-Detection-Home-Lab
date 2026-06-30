@@ -101,7 +101,7 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 
 **Privilege Escalation Alert**
 
-![Privilege-Escalation](Screenshots/Privlege-Escalation-to-Root.png)
+![Privilege Escalation](Screenshots/Privlege-Escalation-to-Root.png)
 
 ---
 
@@ -114,10 +114,6 @@ Monitoring account management events helps security analysts identify unauthoriz
 **User Creation Alert**
 
 ![User Creation](Screenshots/User%20and%20group%20creation.png)
-
-**FIM Kali Perspective** 
-
-![User perspective](Screenshots/User creation Kali Perspective.png) 
 
 ---
 
