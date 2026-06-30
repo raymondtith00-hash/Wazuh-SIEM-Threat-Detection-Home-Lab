@@ -77,7 +77,7 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 - Escalate if successful authentication occurred after repeated failures.
 - Recommend blocking the source IP and resetting compromised credentials if necessary.
 
-**Successful Authenticationi Log in Triage Workflow** 
+**Successful Authentication Log in Triage Workflow** 
 - Verify the username that authenticated.
 - Identify the source IP address.
 - Determine whether the login occurred during expected hours.
