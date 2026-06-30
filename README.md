@@ -139,7 +139,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
-**Network Reconnaissance Triage Workflow 
+**Network Reconnaissance Triage Workflow**
 - Review the IDS signature.
 - Identify the source IP address.
 - Determine the destination host.
