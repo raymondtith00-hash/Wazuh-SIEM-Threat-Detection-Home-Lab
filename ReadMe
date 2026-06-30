@@ -88,5 +88,12 @@ To alert account management activity, I created and removed a local Linux user o
 # What I Learned
 
 Building this lab gave me a much better understanding of how a SOC operates and how security analysts investigate alerts. Before building it, I had learned about SIEMs and threat detection through coursework and labs, but this project gave me the opportunity to put those concepts into practice.
-Throughout the lab, I configured Wazuh, integrated Suricata, simulated attacks from a Kali Linux VM, and investigated the resulting alerts through the Wazuh Dashboard. Working through each scenario helped me better understand how different types of attacker activity appear from a defender's perspective.
-This project also strengthened my Linux skills by giving me hands-on experience managing users, monitoring file changes, working with system services, and troubleshooting security tools. Overall, it helped me become more comfortable using security monitoring tools and reinforced the importance of investigating events instead of simply generating alerts.
+
+Throughout the lab, I configured Wazuh, integrated Suricata, simulated attacks from my Kali Linux VM, and investigated the resulting alerts through the Wazuh Dashboard.
+
+Working through each scenario helped me better understand how different types of attacker activity appear from a defender's perspective and how a SIEM can be used to investigate suspicious behavior instead of simply generating alerts.
+
+This project also strengthened my Linux skills by managing users, monitoring file changes, working with system services, and troubleshooting security tools.
+
+Overall, building this lab made me more comfortable using security monitoring tools, investigating alerts, and understanding the workflow of a Security Operations Center.
+
