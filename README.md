@@ -30,7 +30,6 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 - File Integrity Monitoring (FIM)
 - Network Traffic Analysis
 - Privilege Escalation Detection
-- User Activity Monitoring
 - Threat Detection and Analysis
 - Security Event Investigation
 - Log Analysis and Correlation
