@@ -25,7 +25,7 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 - Nmap (Network Reconnaissance)
 - Privilege Escalation
 - User Creation
-- Password Manipulation
+- Authentication Success
 - File Management Integrity
 
 **Protocols & Services**
