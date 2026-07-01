@@ -80,8 +80,10 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ![Authentication Success](Screenshots/Authentication-success.png)
 
-**Hydra Brute Force Triage Workflow**                                                                              
-- Review the alert severity and rule triggered.
+<details> 
+<summary><strong>Hydra Brute Force Triage Workflow</strong></summary>                                                                          
+
+  - Review the alert severity and rule triggered.
 - Identify the source IP address and targeted username.
 - Count the number of failed authentication attempts.
 - Determine whether multiple usernames were targeted.
@@ -90,6 +92,8 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 - Determine whether the activity originated from an authorized system.
 - Escalate if successful authentication occurred after repeated failures.
 - Recommend blocking the source IP and resetting compromised credentials if necessary.
+
+</details> 
 
 **Successful Authentication Log in Triage Workflow** 
 - Verify the username that authenticated.
